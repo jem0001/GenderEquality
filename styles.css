@@ -813,5 +813,6 @@ footer {
   .hero-flex {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 1rem;
   }
 }
