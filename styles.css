@@ -11,7 +11,7 @@
   --max-width: 1200px;
 }
 
-.hero-logo{
+.hero-logo {
   margin: 0 auto;
 }
 
@@ -466,7 +466,7 @@ footer p {
     font-size: 2rem;
   }
 
-  .header__content p{
+  .header__content p {
     font-size: 1rem;
   }
 
@@ -575,7 +575,8 @@ footer {
   font-weight: bolder;
 }
 
-.footer__form input::placeholder, .footer__form textarea::placeholder{
+.footer__form input::placeholder,
+.footer__form textarea::placeholder {
   color: #cec3c3;
 }
 
@@ -585,7 +586,7 @@ footer {
 }
 
 #acts {
-  background-image: url('images/black.png');
+  background-image: url("images/black.png");
   background-size: cover;
 }
 
@@ -632,8 +633,10 @@ footer {
 }
 
 .hero-flex {
-  display: flex;
-  margin: 3rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 3rem;
 }
 
 .hero-flex img {
@@ -644,12 +647,12 @@ footer {
 }
 
 .hero-flex h1 {
-  padding: 3rem 0;
   font-size: 3rem;
   background: #cf1616;
   background: linear-gradient(to right, #cf1616 0%, #cccf00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 1rem 0;
 }
 
 .hero-flex h1 span {
@@ -658,7 +661,6 @@ footer {
 }
 
 .hero-flex .par {
-  margin: auto 0;
   font-style: italic;
   text-align: justify;
   text-justify: inter-word;
@@ -747,11 +749,6 @@ footer {
     -webkit-transform: rotate(45deg) translate(-5px, -6px);
     transform: rotate(45deg) translate(-5px, -6px);
   }
-
-  .hero-flex {
-    flex-direction: column;
-  }
-
 }
 
 /* TARGETS SECTIONS */
@@ -775,7 +772,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .t__card i {
   margin-right: 2rem;
@@ -787,22 +783,22 @@ footer {
     grid-template-columns: 1fr;
     font-size: 1rem;
     margin: 0 3rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
-  .hero-flex h1{
+  .hero-flex h1 {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .hero-flex .par{
-    font-size: .9rem;
+  .hero-flex .par {
+    font-size: 0.9rem;
     height: 33rem;
     text-align: justify;
     text-justify: inter-word;
   }
 
-  #news{
+  #news {
     margin-top: 9rem;
   }
 
@@ -810,5 +806,12 @@ footer {
     height: 16.3rem;
     width: 16.3rem;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero-flex {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
